@@ -47,7 +47,7 @@ exports.signup = async function (req,res,next){
         email,
         password: hashedPassword,
         places: [],
-        // image: req.file.path
+        image: req.file.path
     });
 
     try{
