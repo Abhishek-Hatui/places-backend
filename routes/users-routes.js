@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/', usersController.getAllUsers);
 router.post(
   '/signup',
-  fileUpload.single('image'),
+  // fileUpload.single('image'),
   [
     body('name').notEmpty().isAlpha(),
     body('email').normalizeEmail().isEmail(),
